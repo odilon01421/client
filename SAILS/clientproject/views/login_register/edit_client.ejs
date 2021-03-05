@@ -1,0 +1,44 @@
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins" style="background-color:rgba(150, 137, 137, 0.678);">
+        <div class="wrapper wrapper--w681">
+            <div class="card card-4">
+                <div class="card-body">
+                    
+                    <form method="POST" action="/update_client/<%= client.id %>">
+                        <div class="row row-space"> 
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Nom</label>
+                                    <input class="input--style-4" type="text" name="nom" value="<%= client.nom%>">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Prenom</label>
+                                    <input class="input--style-4" type="text" name="prenom" value="<%= client.prenom%>">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">ville</label>
+                                    <input class="input--style-4" type="string" name="ville" value="<%= client.ville%>">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Telephone</label>
+                                    <input class="input--style-4" type="number" name="tel" value="<%= client.tel%>">
+                                </div>
+                            </div>
+                        </div>
+                                                   
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" id="sub" type="submit" style="margin-left: 125px">modifier</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<!-- This templates was made by Colorlib (https://colorlib.com) -->
+  
+
+<!-- end document-->

@@ -1,0 +1,78 @@
+
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins" style="background-color:rgba(150, 137, 137, 0.678);">
+        <div class="wrapper wrapper--w681">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">Inscription</h2>
+                    <form method="POST" action="/creer_compte">
+                        <div class="row row-space"> 
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Nom</label>
+                                    <input class="input--style-4" type="text" name="nom">
+                                </div>
+                                <div class="input-group">
+                                    <label class="label">Matricule</label>
+                                    <input class="input--style-4" type="number" name="matricule">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                           
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Catégories</label>
+                                    <div class="select">
+                                        <select class="browser-default custom-select" id="categorie" name="categorie" required>
+                                            <option>Sélectionner</option>
+                                            <option value="Trans">Trans</option>
+                                            <option value="Almerys">Almerys</option>
+                                            <option value="Detourage">Detourage</option>
+                                            <option value="Classik">Classik</option>
+                                            <option value="CQ">CQ</option>
+                                            <option value="Stephania">Stephania</option>
+                                            <option value="Winwindata">Winwindata</option>
+                                          </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Password</label>
+                                    <input class="input--style-4" type="Password" name="password">
+                                </div>
+                            </div>                            
+                        </div>
+                       
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" id="sub" type="submit">Créer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+<script>
+    $("#sub").click(function(){
+        var $cat = $("#categorie").val();
+        if($cat == 'Sélectionner'){
+            alert("Vous devez sélectionner votre catégorie");
+            return false;
+        }
+    });
+</script>
+
+</html>
+<!-- end document-->
